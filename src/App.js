@@ -1,13 +1,17 @@
-import React from 'react';
-import comingSoon from './assets/images/ComingSoon.gif';
+import React, { Suspense } from 'react';
+import { Routes } from './routes';
+import { BrowserRouter } from 'react-router-dom';
+import Fallback from './components/Fallback';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header" style={{ background: 'black' }}>
-        <img src={comingSoon} data-test-id={'coming-soon-image'} alt="logo" width={1000} />
-      </header>
+      <Suspense fallback={<Fallback />}>
+        <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
+      </Suspense>
     </div>
   );
 }

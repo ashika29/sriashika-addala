@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header" style={{ background: 'black' }}>
-        <img src={comingSoon} alt="logo" width={1000} />
+        <img src={comingSoon} data-test-id={'coming-soon-image'} alt="logo" width={1000} />
       </header>
     </div>
   );

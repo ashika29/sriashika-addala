@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders the image in app', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const imageAltText = screen.getByAltText(/logo/i);
+  expect(imageAltText).toHaveAttribute('width');
+  expect(imageAltText).toHaveAttribute('data-test-id', 'coming-soon-image');
 });

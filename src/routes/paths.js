@@ -1,10 +1,8 @@
 import { lazy } from 'react';
+const Base = lazy(() => import('../views/ComingSoon'));
 
-const Home = lazy(() =>
-  import('../views/Home')
-);
-
-export const HOME = "/";
+export const BASE = "/";
+export const HOME = "/home";
 export const ABOUT = "/about";
 export const RESUME = "/resume";
 export const CONTACT = "/contact";
@@ -12,8 +10,8 @@ export const PROJECTS = "/projects";
 
 const ROUTES = [
     {
-    path: HOME,
-    component: Home,
+    path: BASE,
+    component: Base,
     exact: false,
   }
 ];

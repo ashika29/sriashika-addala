@@ -2,7 +2,7 @@ import React from 'react';
 import comingSoon from '../assets/images/ComingSoon.gif';
 import "../App.css";
 
-function Home() {
+function ComingSoon() {
   return (
     <div>
       <header className="App-header" style={{ background: 'black' }}>
@@ -12,4 +12,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default ComingSoon;

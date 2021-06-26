@@ -35,13 +35,10 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest",
-      "plugin:react/recommended",
-      "plugin:prettier/recommended"
+      "react-app/jest"
     ],
     "plugins": [
-      "react",
-      "prettier"
+      "react"
     ]
   },
   "browserslist": {
@@ -57,7 +54,6 @@
     ]
   },
   "devDependencies": {
-    "prettier": "2.2.1",
     "eslint": "^7.26.0",
     "react-router-dom": "^5.2.0",
     "eslint-config-airbnb": "^18.2.1",

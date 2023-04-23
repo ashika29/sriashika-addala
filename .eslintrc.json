@@ -21,6 +21,8 @@
   "rules": {
     "import/prefer-default-export": "warn",
     "import/no-unresolved": "warn",
-    "object-curly-newline": "warn"
+    "object-curly-newline": "warn",
+    "comma-dangle": "off",
+    "prettier/prettier": "warn"
   }
 }

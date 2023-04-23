@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-useless-fragment */
 import React from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Routes as Switch, Route } from 'react-router-dom';
@@ -7,7 +8,7 @@ function Routes() {
   return (
     <Switch>
       {Paths.map(({ path, component: Component, exact }) => (
-        <Route exact={exact} path={path} component={Component} key={`${path}`} />
+        <Route exact={exact} path={path} element={<Component />} key={`${path}`} />
       ))}
     </Switch>
   );

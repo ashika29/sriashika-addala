@@ -13,7 +13,7 @@ const ROUTES = [
   {
     path: BASE,
     component: Base,
-    exact: false,
-  },
+    exact: false
+  }
 ];
 export default ROUTES;

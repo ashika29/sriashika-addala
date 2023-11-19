@@ -1,23 +1,36 @@
-# Hello and welcome to my repo!
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This project was bootstrapped with [Create React App\*](https://github.com/facebook/create-react-app).
+## Getting Started
 
-## Portfolio
+First, run the development server:
 
-This project is a public mirror that reflects my true self: academics, skillset, career history and other aspects of life!
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-I have always wanted to carry something that would reflect me without even talking about it. This project, is that special `something`!!!
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-I'm trying my best to transfer all that's on my mind through the website.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## The COVID-19 pandemic: A message to mankind
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-They say mankind for a reason: human - a kind living being. It's my sincere request to each one of you to try and stay home as much as possible and explore yourself to make the full best use of your skills. Always remember that we can always do something or the other to save one another.
+## Learn More
 
-Try planting a sapling, or learning a new language, or organise online tutions for those younger to you (this way you're transfering your knowledge and also utilizing the best of your time), or learn new artforms, or maybe try and involve yourself with some interesting startup ideas to battle a real-time problem, or learn your heart out and implement your knowledge somewhere. There's a looooot to do, right? ;)
+To learn more about Next.js, take a look at the following resources:
 
-## Contact Me
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-I know that most of you would be a lot better maybe in the same field, or elsewhere. Let's carry the chain forward of enlightening each other or even support each other in times of a crisis.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Feel free to contact me: <ashika2k8@gmail.com>, <sriashika299@hotmail.om>
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

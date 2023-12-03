@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "rangav.vscode-thunder-client",
+        "eamodio.gitlens",
+        "oliversturm.fix-json",
+        "abdoseadaa.node-js-snippet",
+        "andrewsai.nodejs-dev-pack"
+    ]
+}

@@ -2,6 +2,7 @@
     "name": "sriashika-addala-postgraphile-middleware",
     "version": "1.0.0",
     "main": "index.js",
+    "type": "module",
     "scripts": {
         "start": "env-cmd -f .env node index.js",
         "start-stag": "env-cmd -f .env.staging node index.js",

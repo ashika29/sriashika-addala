@@ -4,8 +4,16 @@ import React from "react";
 
 export default function DynamicPage(props: any) {
   console.log("dynamic page props: ", props);
+  const { title } = props;
 
-  return <div>DynamicPage</div>;
+  return (
+    <div>
+      <h1>DynamicPage</h1>
+      <div>
+        <h2>{title}</h2>
+      </div>
+    </div>
+  );
 }
 
 export async function getServerSideProps(context: any) {
@@ -14,9 +22,9 @@ export async function getServerSideProps(context: any) {
 
   const { data } = await client.query({
     query: GET_PAGE_CONTENT,
-    variables: { slug },
+    variables: { slug: `/${slug}` },
   });
 
   // Pass the fetched data to the page component as props
-  return { props: { data: data?.results?.nodes } };
+  return { props: { ...data?.results?.nodes?.[0] } };
 }

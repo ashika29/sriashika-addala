@@ -1,26 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ClassNameMap, makeStyles } from "@mui/styles";
-import { Grid } from "@mui/material";
+import Body from "@/layouts/Body";
+import { ProviderProps } from "@/types/Providers";
 
-interface LayoutProps {
-  children: React.ReactChild;
-}
-
-function Layout({ children }: LayoutProps): JSX.Element {
-  const classes = useStyles();
-
-  return <Grid className={classes.body}>{children}</Grid>;
+function Layout({ children }: ProviderProps): JSX.Element {
+  return (
+    <div className="gradientBorder">
+      <Body>{children}</Body>
+    </div>
+  );
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
-const useStyles: () => ClassNameMap = makeStyles(() => ({
-  body: {
-    padding: `5rem 10rem`,
-  },
-}));
 
 export default Layout;

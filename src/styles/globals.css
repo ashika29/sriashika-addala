@@ -1,9 +1,9 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -104,4 +104,55 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+@keyframes spin {
+  to {
+    --angle: 1turn;
+  }
+}
+
+.gradientBorder {
+  padding: 2rem 4rem;
+  margin: 1.5rem;
+  --border-width: 2px;
+  --radius: 24px;
+  border: var(--border-width) solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      red,
+      #07b39b,
+      green,
+      #f79533,
+      lightgreen,
+      rgb(44, 152, 220)
+    )
+    1;
+  animation: spin 3s linear infinite paused;
+  animation-play-state: running;
+  z-index: 1000;
+}
+
+nav {
+  display: none;
+}
+
+.navScrolled {
+  background: var(--primary-glow);
+  padding: 2rem 5rem;
+  top: 0;
+  position: fixed;
+  backdrop-filter: blur(10rem);
+  margin: 0 -6rem;
+  display: unset;
+  animation: display 10s ease-in-out linear infinite;
+  z-index: 999;
+  width: 100%;
+  scroll-behavior: smooth;
 }

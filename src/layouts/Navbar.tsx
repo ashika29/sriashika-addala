@@ -1,5 +1,11 @@
-import React from "react";
+import { useScrollTrigger } from "@mui/material";
 
 export default function Navbar() {
-  return <div>Navbar</div>;
+  const trigger = useScrollTrigger();
+
+  return (
+    <nav className={trigger ? "navScrolled" : ""}>
+      Navbar &nbsp; &nbsp; Get started by editing src/pages/index.tsx
+    </nav>
+  );
 }

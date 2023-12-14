@@ -1,4 +1,4 @@
-import { Fade, useScrollTrigger } from "@mui/material";
+import { AppBar, Fade, useScrollTrigger } from "@mui/material";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
@@ -31,9 +31,11 @@ export default function Navbar() {
         exit: 1000,
       }}
     >
-      <nav className={trigger && isMouseOver ? "navScrolled" : ""}>
-        Navbar &nbsp; &nbsp; Get started by editing src/pages/index.tsx
-      </nav>
+      <AppBar color="transparent" position="relative">
+        <nav className={trigger && isMouseOver ? "navScrolled" : ""}>
+          Navbar &nbsp; &nbsp; Get started by editing src/pages/index.tsx
+        </nav>
+      </AppBar>
     </Fade>
   );
 }

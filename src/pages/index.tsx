@@ -1,11 +1,12 @@
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import usePage from "@/utils/customHooks/usePage";
+import config from "@/configs/home.config.json";
 
 export default function Home() {
   return (
     <>
-      {usePage("Sriashika Addala", "Not just a name :)")}
+      {usePage(config.pg_Title, config.pg_description)}
       <main className={`${styles.main}`}>
         <div className={styles.description}>
           <p>

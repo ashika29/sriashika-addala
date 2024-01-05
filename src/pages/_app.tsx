@@ -5,7 +5,6 @@ import { MyAppProps } from "@/types/Providers";
 import createEmotionCache from "@/utils/createEmotionCache";
 import { CacheProvider } from "@emotion/react";
 import { ThemeProvider, createTheme } from "@mui/material";
-import { SnackbarProvider } from "notistack";
 
 const theme = createTheme();
 const clientSideEmotionCache = createEmotionCache();
@@ -17,11 +16,9 @@ export default function App(props: MyAppProps) {
     <AppCacheProvider {...props}>
       <CacheProvider value={emotionCache}>
         <ThemeProvider theme={theme}>
-          <SnackbarProvider>
-            <Layout>
-              <Component {...pageProps} />
-            </Layout>
-          </SnackbarProvider>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </ThemeProvider>
       </CacheProvider>
     </AppCacheProvider>

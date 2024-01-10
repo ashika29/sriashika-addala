@@ -1,5 +1,5 @@
 "use client"; // Error components must be Client Components
-
+import React from "react";
 import { Button } from "@mui/material";
 import { useEffect } from "react";
 
@@ -16,7 +16,7 @@ export default function Error({
   }, [error]);
 
   return (
-    <div>
+    <React.Fragment>
       <h2>Something went wrong!</h2>
       <Button
         variant="outlined"
@@ -28,6 +28,6 @@ export default function Error({
       >
         Try again
       </Button>
-    </div>
+    </React.Fragment>
   );
 }

@@ -8,7 +8,7 @@ const port = 5001;
 app.use(cors());
 app.use(
     postgraphile(
-        `postgres://${process.env.DATABASE_USER}:${process.env.DATABASE_PWD}@${process.env.DATABASE_HOST}:${process.env.DATABASE_PORT}/${process.env.DATABASE_NAME}`,
+        `postgres://${process.env.PSQL_USER}:${process.env.PSQL_PASSWORD}@${process.env.PSQL_HOST}:${process.env.PSQL_PORT}/${process.env.PSQL_DATABASE}?sslmode=require`,
         "public",
         {
             disableDefaultMutations: false,

@@ -2,7 +2,6 @@ import { client } from "@/graphql/client";
 import { GET_PAGE_CONTENT } from "@/graphql/queries/GET_PAGE_CONTENT";
 import React, { useEffect } from "react";
 import Error from "./error";
-import Medium from "@/components/articles/Medium";
 
 export default function DynamicPage(props: any) {
   console.log("dynamic page props: ", props);
